@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paypal Standard</title>
+
+    <style>
+      body {
+        background-color: lightblue;
+
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .itemsRow1 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .itemsRow2 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .itemsRow3 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .itemsRow4 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .itemsRow5 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .item {
+        border: 2px solid navy;
+        width: 30%;
+        text-align: center;
+        background-color: #fdffba;
+        margin: 1%;
+        padding-bottom: 1%;
+      }
+
+      .newsletter {
+        width: 3%;
+        text-align: center;
+        margin: 1%;
+        padding-bottom: 1%;
+        margin-left: 40%;
+      }
+
+      .donateButton {
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+      }
+
+      .donateButton h2 {
+        color: white;
+      }
+
+      .donate {
+        margin-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        background-color: navy;
+      }
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Erica's Shop</h1>
+    <h1><form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" >
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form></h1>
+    <div class = "itemsRow1">
+      <div class = "item">
+        <h2> Notepad - $5</h2>
+        <img src="images/notepad.jpg" width = "40%">
+        <br>
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="MJ2VGSE8SCH8G">
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="JG2Z87RMANVVC">
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+      </div>
+
+      <div class="item">
+        <h2>Camera - $10 plus Iowa Sales Tax</h2>
+        <img src = "images/camera.jpg" width = "40%">
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="XNA3TQUDF359U">
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="G4QVZ87GR4CAS">
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+
+      <div class="item">
+        <h2>T-Shirt - $15 plus $7.95 Shipping and Handling</h2>
+        <img src= "images/tshirt.png" width = "40%">
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="XW7D2JELJMW9L">
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="8CQPSKC4C2BV6">
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+    </div>
+    <div class = "itemsRow2">
+      <div class = "item">
+        <h2>Long Sleeve Shirt - $15 Dropdown Selection</h2>
+        <img src = "images/longsleeve.png" width="40%">
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="QKRAL5GVFUY88">
+          <center><table>
+          <tr><td><center><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0"></center>
+          	<option value="XS">XS </option>
+          	<option value="S">S </option>
+          	<option value="M">M </option>
+          	<option value="L">L </option>
+          	<option value="XL">XL </option>
+          </select> </td></tr>
+        </table></center>
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="PTG4GFH7VCF8S">
+          <center><table>
+          <tr><td><input type="hidden" name="on0" value="Sizes">Sizes</td></tr><tr><td><select name="os0">
+          	<option value="XS">XS </option>
+          	<option value="S">S </option>
+          	<option value="M">M </option>
+          	<option value="L">L </option>
+          	<option value="XL">XL </option>
+          </select> </td></tr>
+        </table></center>
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+
+      <div class="item">
+        <h2>Candle - Mulitiple Options</h2>
+        <img src = "images/candle.jpg" width = "40%">
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="JAEPT9DLKLCXW">
+        <center><table>
+        <tr><td><center><input type="hidden" name="on0" value="Scent">Scent</td></tr><tr><td><select name="os0"></center>
+        	<option value="Pumpkin">Pumpkin $15.00 USD</option>
+        	<option value="Caramel Frappe">Caramel Frappe $12.00 USD</option>
+        	<option value="Summer Breeze">Summer Breeze $10.00 USD</option>
+        </select> </td></tr>
+      </table></center>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="3SQ6X8JDUR85E">
+        <center><table>
+        <tr><td><input type="hidden" name="on0" value="Scents">Scents</td></tr><tr><td><select name="os0">
+        	<option value="Pumpkin">Pumpkin $15.00 USD</option>
+        	<option value="Caramel Frappe">Caramel Frappe $12.00 USD</option>
+        	<option value="Summer Breeze">Summer Breeze $10.00 USD</option>
+        </select> </td></tr>
+      </table></center>
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+
+      </div>
+
+      <div class = "item">
+        <h2>Necklace - $45 Special Instructions</h2>
+        <img src ="images/necklace.jpg" width="40%">
+        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="E7K8WP569RS7G">
+          <center><table>
+          <tr><td><input type="hidden" name="on0" value="Engraving:">Engraving:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+        </table></center>
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+        <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="P7V2QCB484UQN">
+          <center><table>
+          <tr><td><input type="hidden" name="on0" value="Engraving:">Engraving:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+        </table></center>
+          <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+      </div>
+    </div>
+    <div class = "itemsRow3">
+      <div class = "item">
+        <h1>Newsletter</h1>
+
+        <div id="paypal-button-container"></div>
+        <script src="https://www.paypal.com/sdk/js?client-id=AbjOHxhtfQ9uNc6lAufroX2aLg0pg4gZHr6Za9qmSY3KcwNVBp1mJ3mZuIMUSOTA6TPRV3BjFlR1DBIY&vault=true" data-sdk-integration-source="button-factory"></script>
+        <script>
+          paypal.Buttons({
+              style: {
+                  shape: 'rect',
+                  color: 'silver',
+                  layout: 'vertical',
+                  label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  'plan_id': 'P-2ES610423G328305LL6FQOKQ'
+                });
+              },
+              onApprove: function(data, actions) {
+                //alert(data.subscriptionID);
+                alert("Congratulations! You now have access to our newsletter!")
+              }
+          }).render('#paypal-button-container');
+        </script>
+      </div>
+      <div class = "item">
+      <h1>Get a 3 month membership to our gym!</h1>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="AMCPEZKTBTWXJ">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+
+    <div class = "item">
+      <h1>Download Beautiful Windmill Image - $5</h1>
+      <img src= "images/paypalFiles/windmill.jpg" width ="40%"></img>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="LW7NUWYU42E5N">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+
+  <div class = "itemsRow4">
+    <div class = "item">
+      <h1>Download Our Exclusive Menu for Secret Meals (Word Document) - $10</h1>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="KV76SP7LM444W">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+
+    <div class = "item">
+      <h1>Download Our Exclusive Menu for Secret Meals (PDF) - $10</h1>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="8US7QDLEGV7V8">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+
+
+    <div class = "item">
+      <h1>Download a zip file containing the Beautiful Windmill Image and Exclusive Menu (Word and PDF) - $12</h1>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="KAHC6AZBFJWTQ">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+
+  <div class = "itemsRow5">
+    <div class = "item">
+      <h1>Download Adorable Dog Video! - $7</h1>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="EDV9SYVM5JVUL">
+        <input type="image" src="https://www.sandbox.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+
+
+
+<footer>
+  <div class = "donate">
+
+    <div class = "donateButton">
+      <h2>Donate Fixed Amount</h2>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="KQR4UJXZZEYVU" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
+
+    <center>
+    <div class = "donateButton">
+      <h2>3 Choices of Amount for Donation</h2>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="KQR4UJXZZEYVU" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
+  </center>
+
+    <div class = "donateButton">
+      <h2>Recurring Donation of Variable Amount</h2>
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="KQR4UJXZZEYVU" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</footer>
+
+  </body>
+</html>
